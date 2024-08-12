@@ -1,0 +1,120 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #904E55;
+  color: #fae4c4;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 12px 30px;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #564E58;
+  color: #fae4c4;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  padding: 10px 20px;
+  float: left;
+  font-size: 20px;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 90px;
+}
+
+
+a:link, a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+li a:hover, li a:active {
+  color: #FB9400;
+}
+
+main {
+  margin:  100px 0;
+}
+
+fieldset {
+  background-color: #F2EFE9;
+  border-radius: 15px;
+  margin: 50px;
+  border: 0;
+}
+
+legend {
+  background-color: #BFB48F;
+  padding: 10px;
+  margin-left: 10px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+legend p {
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?o2jrzf');
+    src:  url('fonts/icomoon.eot?o2jrzf#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?o2jrzf') format('truetype'),
+      url('fonts/icomoon.woff?o2jrzf') format('woff'),
+      url('fonts/icomoon.svg?o2jrzf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-youtube1:before {
+    content: "\ea9d";
+  }
